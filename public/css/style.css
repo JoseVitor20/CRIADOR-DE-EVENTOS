@@ -1,0 +1,234 @@
+/*Geral*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Josefin Sans';
+    }
+
+    body{
+        min-height: 100vh;
+        padding-bottom: 80px;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .msg{
+        max-width: 300px !important;
+        margin: 0 auto;
+        padding: 10px 0px;
+        position: absolute;
+        right: 0;
+        background-color: rgb(151, 255, 221);
+        color: rgb(0, 101, 64);
+        border-radius: 10px;
+        font-weight: bolder;
+        font-size: 20px;
+        border: 2px solid rgb(0, 255, 28);
+        text-align: center;
+        animation: mensagem 4s linear 1 reverse forwards;
+        opacity: 1;
+    }
+
+    @keyframes mensagem{
+        0% {
+            transform: translateX(-100px);  /* Começa fora da tela à esquerda */
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(0);       /* Movimenta para sua posição original */
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(100px);   /* Vai para a direita */
+            opacity: 1;
+        }
+    }
+
+/*Bootstrap*/
+    .row{
+        margin: 0 !important;
+    }
+
+    .container-fluid{
+        padding: 0 !important;
+    }
+
+    .btn-primary{
+        background-color: rgb(50, 52, 164) !important;
+        border: 2px solid lightblue !important;
+    }
+
+    .btn-primary:hover{
+        background-color: #5456cb !important;
+        border: 2px solid lightblue !important;
+    }
+
+/*Header*/
+    header{
+        background-color: white;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    #navbar{
+        justify-content: space-between !important;
+        padding: 0px 4% ;
+    }
+
+    #navbar img{
+        width: 60px;
+    }
+
+    #navbar a{
+        font-size: 20px;
+        color: rgb(118, 118, 118);
+    }
+
+    #navbar a:hover{
+        color: rgb(195, 195, 195);
+    }
+
+/*Search Container*/
+    #search-container{
+        background-image: url('../img/Viagens6.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+        padding: 50px;
+        text-align: center;
+    }
+
+    #search-container h1{
+        color: white;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    #search-container input{
+        position: relative;
+        margin: 0 auto;
+    }
+
+/*Events list*/
+    #events-container{
+        padding: 50px;
+    }
+
+    #events-container h2{
+        margin-bottom: 10px;
+    }
+
+    #events-container .subitle{
+        color: rgb(118, 118, 118);
+        margin-bottom: 40px;
+    }
+
+    #cards-container .card{
+        display: flex;
+    }
+
+    #events-container .card{
+        flex:1 1 0;
+        max-width: 25%;
+        border-radius: 10px;
+        padding: 0 !important;
+        margin: 0px 5px;
+    }
+
+    #events-container img{
+        max-height: 150px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card .card-date{
+        font-size: 15px;
+        color: #bfbfbf;
+    }
+
+    .card .card-title{
+        color: rgb(41, 41, 41);
+        font-size: 20px;
+        font-weight: bolder;
+        margin-bottom: 30px;
+    }
+
+    .card .card-participantes{
+        color: #505050;
+        font-weight: bolder;
+    }
+
+/*Event page*/
+    #image-container,
+    #info-container{
+        margin-top: 30px;
+    }
+
+    #image-container img{
+        border-radius: 10px;
+    }
+
+    #info-container h1{
+        font-size: 36px;
+        font-weight: 900;
+    }
+
+    #info-container p{
+        margin: 15px 0;
+        font-size: 14px;
+        display: flex;
+    }
+
+    #info-container h1,
+    #description-container h3{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    #description-container h3{
+        margin-top: 20px;
+    }
+
+    #info-container i{
+        font-size: 20px;
+        margin-right: 10px;
+        color: #898bf6;
+    }
+
+    #items-list{
+        list-style: none;
+        padding-left: 20px;
+    }
+
+    #items-list li{
+        display: flex;
+    }
+
+/*Dashboard*/
+    .dashboard-title-container{
+        margin-bottom: 30px;
+        margin-top: 30px !important;
+    }
+
+    .dashboard-title-container th{
+        width: 50%;
+    }
+
+/*Edit page*/
+    .img-preview{
+        width: 200px;
+        margin-top: 20px;
+    }
+
+/* Footer */
+    footer{
+        text-align: center;
+        background-color: #505050;
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
